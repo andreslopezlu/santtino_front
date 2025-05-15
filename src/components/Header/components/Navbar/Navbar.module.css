@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  padding: 16px 16px 16px;
+  justify-content: space-between;
+  background-color: rgb(16, 16, 88);
+  align-items: center;
+  height: 60px;
+}
+
+.navigation, .profile{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.logoMobile {
+  width: 50px;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+}
+
+.logoMobile:hover {
+  transform: scale(1.03);
+  border-radius: 50%;
+}
+
+.logoMobile:active {
+  transform: scale(1.06);
+}
+
+.logoDesktop {
+  display: none;
+  cursor: pointer;
+}
+
+.navbarIcon {
+  padding: 12px;
+  border-radius: 50%;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbarIcon:hover {
+  background-color: rgb(42, 44, 120);
+  border-radius: 50%;
+}
+
+.navbarIcon:active {
+  transform: scale(1.05);
+}
+
+.desktopMenu {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .logoMobile {
+    display: none;
+  }
+
+  .logoDesktop {
+    display: block;
+    height: 85px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .profile {
+    width: 20%;
+  }
+}
