@@ -1,0 +1,16 @@
+.empty-content {
+  padding-top: 132px;
+}
+
+.prueba {
+  height: 100vh;
+  background-image: url("./assets/istockphoto-1354245720-1024x1024.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", "sans-serif";
+  font-size: 24px;
+  color: white;
+}
