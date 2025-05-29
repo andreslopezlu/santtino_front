@@ -9,7 +9,7 @@ const NavbarButton = ({kind, link, onButtonClick, menuVisibility, display, child
   const navigate = useNavigate() 
 
   const handleButtonClick = () => {
-    if (kind === NAVBAR_BUTTON_ACTION.useNavigate){
+    if (kind === NAVBAR_BUTTON_ACTION.navigate){
       if(menuVisibility){
         onButtonClick(!menuVisibility)
       }

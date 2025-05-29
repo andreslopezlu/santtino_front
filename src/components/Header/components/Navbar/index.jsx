@@ -7,7 +7,7 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import styles from "./Navbar.module.css"
 
 import santtinoLogoMobile from "../../../../assets/escudo_dorado.png"
-import santtinoLogo from "../../../../assets/Logo_dorado_sinsoporte.png"
+import santtinoLogoDesktop from "../../../../assets/Logo_dorado_sinsoporte.png"
 
 import NavbarButton from '../NavbarButton';
 import DesktopMenu from '../DesktopMenu';
@@ -28,7 +28,7 @@ const Navbar = ({isMenuVisible, onMenuToggle}) => {
         <div className={styles.home} >
           <NavbarButton kind="navigate" link="/" onButtonClick={onMenuToggle} menuVisibility={isMenuVisible}>
             <img src={santtinoLogoMobile} alt="santtino-logo-mobile" className={styles.logoMobile}/>
-            <img src={santtinoLogo} alt="santtino-logo-desktop" className={styles.logoDesktop}/>
+            <img src={santtinoLogoDesktop} alt="santtino-logo-desktop" className={styles.logoDesktop}/>
           </NavbarButton>
         </div>
         <DesktopMenu />
