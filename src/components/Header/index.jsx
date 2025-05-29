@@ -10,12 +10,16 @@ const Header = () => {
 
 	const [isMenuVisible, setIsMenuVisible] = useState(false)
 
+	const handleMenuVisibility = () => {
+     setIsMenuVisible(!isMenuVisible)
+}
+
 	return (
 		<>
 			<div className={styles.header}>
 				<Offers />
-				<Navbar isMenuVisible={isMenuVisible} setIsMenuVisible={setIsMenuVisible}/>
-				<MobileMenu isMenuVisible={isMenuVisible} setIsMenuVisible={setIsMenuVisible}/>
+				<Navbar isMenuVisible={isMenuVisible} onMenuToggle={handleMenuVisibility}/>
+				<MobileMenu isMenuVisible={isMenuVisible} onMenuToggle={handleMenuVisibility}/>
 			</div>
 		</>
 	)

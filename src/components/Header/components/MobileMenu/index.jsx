@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 import styles from "./MobileMenu.module.css"
 
-const MobileMenu = ({isMenuVisible, setIsMenuVisible}) => {
+const MobileMenu = ({isMenuVisible, onMenuToggle}) => {
 
   const handleLinkClick = () => {
-    setIsMenuVisible(!isMenuVisible)
+    onMenuToggle(!isMenuVisible)
   }
 
   return (
