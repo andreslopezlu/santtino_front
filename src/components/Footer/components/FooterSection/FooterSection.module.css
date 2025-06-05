@@ -1,0 +1,46 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-decoration: none;
+  all: unset;
+  cursor: pointer;
+  font-family: "roboto", "sans-serif";
+  font-size: 18px;
+  font-weight: 300;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.title:active {
+  transform: scale(1.05);
+}
+
+.title:hover {
+  background-color: rgb(42, 44, 120);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.titleSelected {
+  background-color: rgb(42, 44, 120);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.contentInvisible {
+  display: none;
+}
+
+.contentVisible {
+  display: block;
+}

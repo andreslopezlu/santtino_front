@@ -36,7 +36,7 @@ const Navbar = ({isMenuVisible, onMenuToggle}) => {
           <NavbarButton kind="search" onButtonClick={onMenuToggle} menuVisibility={isMenuVisible} display="mobile">
             <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" color="white" className={`${styles.navbarIcon}`}/>
           </NavbarButton>
-          <NavbarButton kind="navigate" link="cart" onButtonClick={onMenuToggle} menuVisibility={isMenuVisible}>
+          <NavbarButton kind="navigate" link="/cart" onButtonClick={onMenuToggle} menuVisibility={isMenuVisible}>
             <FontAwesomeIcon icon={faCartShopping} size="lg" color="white" className={styles.navbarIcon}/>
           </NavbarButton>
           <NavbarButton kind="navigate" link="/profile" onButtonClick={onMenuToggle} menuVisibility={isMenuVisible}>

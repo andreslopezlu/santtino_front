@@ -11,12 +11,14 @@
 
 .active {
   left: 0;
-  transition: left 0.5s ease-in-out;
+  transition: left 0.5s ease-in-out, height 1ms ease-in-out 1ms;
+  height: 100vh;
 }
 
 .inactive {
   left: -100%;
-  transition: left 0.5s ease-in-out 0.35s;
+  transition: left 0.5s ease-in-out 0.35s, height 1ms ease-in-out 0.8s;
+  height: 0;
 }
 
 .link {

@@ -1,0 +1,155 @@
+.footer {
+  background-color: rgb(16, 16, 88);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 32px 32px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.logoMobile {
+  width: 50px;
+  transition: transform 0.1s ease;
+  cursor: pointer;
+}
+
+.logoMobile:hover {
+  transform: scale(1.03);
+  border-radius: 50%;
+}
+
+.logoMobile:active {
+  transform: scale(1.06);
+}
+
+.logoDesktop {
+  display: none;
+  cursor: pointer;
+}
+
+.followUsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.sectionTitle {
+  text-decoration: none;
+  all: unset;
+  font-family: "roboto", "sans-serif";
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.socialNetworks {
+  display: flex;
+}
+
+.networkContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.networkName {
+  text-decoration: none;
+  all: unset;
+  font-family: "nunito", "sans-serif";
+  font-size: 14px;
+  font-weight: 300;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+  color: white;
+  display: block;
+}
+
+.socialIcon {
+  margin-right: 8px;
+}
+
+.networkContent:active {
+  transform: scale(1.05);
+}
+
+.networkContent:hover {
+  background-color: rgb(42, 44, 120);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: white;
+}
+
+.link {
+  text-decoration: none;
+  all: unset;
+  cursor: pointer;
+  font-family: "nunito", "sans-serif";
+  font-size: 14px;
+  font-weight: 300;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+}
+
+.link:active {
+  transform: scale(1.05);
+}
+
+.link:hover {
+  background-color: rgb(42, 44, 120);
+}
+
+.policies {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 16px;
+  max-width: 60%;
+}
+
+@media (min-width: 770px) {
+  .logoMobile {
+    display: none;
+  }
+
+  .logoDesktop {
+    display: block;
+    height: 85px;
+    transition: transform 0.1s ease;
+  }
+
+  .logoDesktop:hover {
+  transform: scale(1.03);
+  border-radius: 50%;
+  }
+
+  .logoDesktop:active {
+    transform: scale(1.06);
+  }
+}
