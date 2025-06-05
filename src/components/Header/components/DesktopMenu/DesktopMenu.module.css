@@ -28,5 +28,8 @@
 
   .link:hover {
     background-color: rgb(42, 44, 120);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
   }
 }
